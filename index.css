@@ -349,10 +349,12 @@ body.light-header .hamburger span {
 
 .accent-script {
     font-family: 'Great Vibes', cursive;
-    font-size: 32px;
+    font-size: 38px; /* Slightly larger for better script visibility */
     color: var(--accent-color);
-    padding: 0 6px;
-    font-weight: normal;
+    padding: 0 8px;
+    font-weight: 400; /* Great Vibes looks better at 400 */
+    vertical-align: middle;
+    line-height: 1;
 }
 
 .intro-signature {
@@ -543,12 +545,32 @@ body.light-header .hamburger span {
     border: 1px solid #fff;
 }
 
-.btn-primary { background: #fff; color: var(--dark-bg); }
+/*.btn-primary { background: #fff; color: var(--dark-bg); }*/
 .btn-primary:hover { background: transparent; color: #fff; }
+
+/* LINE Button Styling */
+.btn-line {
+    background: #E5D1B0;
+    color: #fff;
+    border-color: #E5D1B0;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    box-shadow: 0 4px 15px rgba(229, 209, 176, 0.3);
+}
+
+.btn-line:hover {
+    background: transparent;
+    color: #E5D1B0;
+}
 
 /* Footer */
 footer { padding: 120px 60px; text-align: center; }
-.footer-logo { font-size: 20px; margin-bottom: 30px; }
+.footer-logo { 
+    font-size: 24px; 
+    margin-bottom: 30px; 
+    letter-spacing: 0.5em; /* Modern spread */
+    font-weight: 200;
+}
 
 /* Hero Optimization */
 #hero {
